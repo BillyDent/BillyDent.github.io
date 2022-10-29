@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Karrik;
+    src: url("../fonts/Karrik-Regular.woff2") format("woff2"),
+         url("../fonts/Karrik-Regular.woff") format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Karrik;
+    src: url("../fonts/Karrik-Italic.woff2") format("woff2"),
+         url("../fonts/Karrik-Italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url("../fonts/Grotesk.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Apfel Grotezk;
+    src: url("../fonts/ApfelGrotezk-Regular.woff") format("woff"),
+         url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Apfel Grotezk;
+    src: url("../fonts/ApfelGrotezk-Fett.woff") format("woff"),
+         url("../fonts/ApfelGrotezk-Fett.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Apfel Grotezk;
+    src: url("../fonts/ApfelGrotezk-Brukt.woff") format("woff"),
+         url("../fonts/ApfelGrotezk-Brukt.woff2") format("woff2");
+    font-style: italic;
+}
+

@@ -1,0 +1,4 @@
+fonts:
+Karrik by Jean-Baptiste Morizot and Lucas Le Bihan https://velvetyne.fr/fonts/karrik/download/
+Grotesk by Frank Adebiaye https://velvetyne.fr/fonts/grotesk/
+Apfel Grotezk by Luigi Gorlero http://collletttivo.it/

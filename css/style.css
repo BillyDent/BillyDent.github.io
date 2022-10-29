@@ -1,32 +1,27 @@
-@import 'bulma/css/bulma.css';
+@import "page-structure.css";
+@import "text-helpers.css";
+@import "fonts.css";
 
-span.center-text {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+:root {
+    font-family: Apfel Grotezk;
 }
 
-.absolute-center {
-    /* Must manually set width/height */
-    width: 100vw;
-    height: 100vh;
-   
-    /* The magic centering code */
-    margin:auto;
-    position:absolute;
-    top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
-    left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
-   
-    /* Prevent div from overflowing main window */
-    max-width:100%;
-    max-height:100%;
-    overflow:auto;
+img {
+    max-width: 100%;
+    display: block;
+  }
 
-    /* Center content */
-    display: flex;
+.center-text {
     text-align: center;
-    align-items: center;
-    justify-content: center;
+}
+
+a.landing-hyperlink {
+    font-size: 1.25rem;
+}
+
+img.about-selfie {
+    min-width: 10%; 
+    max-width: 500px;
 }
 
 img.platform-icon {
@@ -35,4 +30,54 @@ img.platform-icon {
 
 div.footer-text {
     color: gray;
+}
+
+div.center-container-flex-vertical {
+    display:flex; 
+    flex-direction: column; 
+    align-items:center; 
+    justify-content:center; 
+    height:100%;
+}
+
+div.center-container-flex-horizontal {
+    display:flex; 
+    flex-direction: row; 
+    align-items:center; 
+    justify-content:center; 
+    height:100%;
+    flex-wrap: wrap;    
+}
+
+div.container-flex-horizontal {
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+}
+
+@media (max-width: 800px) {
+
+    div.center-container-flex-horizontal {
+        flex-direction: column;
+    }
+
+    img.about-selfie {
+        max-width: 75vw;    
+    }    
+}
+
+.outline {
+    --t: 1px;
+    --c: black;
+    --f: 1px;
+    --nt: calc(var(--t) * -1);
+
+    text-shadow: var(--nt) var(--nt) var(--f) var(--c), 
+    var(--nt) 0 var(--f) var(--c), 
+    var(--nt) var(--t) var(--f) var(--c), 
+    0 var(--t) var(--f) var(--c), 
+    var(--t) var(--t) var(--f) var(--c),
+    var(--t) 0 var(--f) var(--c),
+    var(--t) var(--nt) var(--f) var(--c),
+    0 var(--nt) var(--f) var(--c);
 }
