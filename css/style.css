@@ -6,10 +6,24 @@
     font-family: Apfel Grotezk;
 }
 
+p {
+    max-width: 40ch;
+}
+
 img {
     max-width: 100%;
     display: block;
-  }
+}
+
+ul li.icon-li  {
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+}
+
+ul.icon-ul  {
+    list-style: none;
+}
 
 .center-text {
     text-align: center;
@@ -32,7 +46,7 @@ div.footer-text {
     color: gray;
 }
 
-div.center-container-flex-vertical {
+div.center-container-flex-vertical-fullheight {
     display:flex; 
     flex-direction: column; 
     align-items:center; 
@@ -40,7 +54,7 @@ div.center-container-flex-vertical {
     height:100%;
 }
 
-div.center-container-flex-horizontal {
+div.center-container-flex-horizontal-fullheight {
     display:flex; 
     flex-direction: row; 
     align-items:center; 
@@ -49,10 +63,19 @@ div.center-container-flex-horizontal {
     flex-wrap: wrap;    
 }
 
+div.center-container-flex-horizontal {
+    display:flex; 
+    flex-direction: row; 
+    align-items:center; 
+    justify-content:center; 
+    flex-wrap: wrap;    
+}
+
 div.container-flex-horizontal {
     display:flex; 
     align-items:center; 
     justify-content:center;
+    flex-wrap:wrap;
 }
 
 @media (max-width: 800px) {
@@ -64,20 +87,4 @@ div.container-flex-horizontal {
     img.about-selfie {
         max-width: 75vw;    
     }    
-}
-
-.outline {
-    --t: 1px;
-    --c: black;
-    --f: 1px;
-    --nt: calc(var(--t) * -1);
-
-    text-shadow: var(--nt) var(--nt) var(--f) var(--c), 
-    var(--nt) 0 var(--f) var(--c), 
-    var(--nt) var(--t) var(--f) var(--c), 
-    0 var(--t) var(--f) var(--c), 
-    var(--t) var(--t) var(--f) var(--c),
-    var(--t) 0 var(--f) var(--c),
-    var(--t) var(--nt) var(--f) var(--c),
-    0 var(--nt) var(--f) var(--c);
 }

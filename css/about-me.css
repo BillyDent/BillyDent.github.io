@@ -1,0 +1,15 @@
+h1.about-me {
+    text-align:center;
+}
+
+img.software-icon {
+    display:block;
+    margin: 0 1rem 0 0;
+    padding: 0;
+    width:3rem;
+    height:3rem;
+}
+
+h3.about-me-subheading {
+    margin-bottom: -1rem;
+}
