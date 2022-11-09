@@ -33,17 +33,12 @@ a.landing-hyperlink {
     font-size: 1.25rem;
 }
 
-img.about-selfie {
-    min-width: 10%; 
-    max-width: 500px;
+a.active-link {
+    color:gray;
 }
 
 img.platform-icon {
     width:24px;
-}
-
-div.footer-text {
-    color: gray;
 }
 
 div.center-container-flex-vertical-fullheight {
@@ -73,7 +68,7 @@ div.center-container-flex-horizontal {
 
 div.container-flex-horizontal {
     display:flex; 
-    align-items:center; 
+    align-items:stretch; 
     justify-content:center;
     flex-wrap:wrap;
 }
@@ -83,8 +78,4 @@ div.container-flex-horizontal {
     div.center-container-flex-horizontal {
         flex-direction: column;
     }
-
-    img.about-selfie {
-        max-width: 75vw;    
-    }    
 }

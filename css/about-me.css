@@ -2,6 +2,11 @@ h1.about-me {
     text-align:center;
 }
 
+img.about-selfie {
+    object-fit: cover;
+    max-width: 40ch;
+}
+
 img.software-icon {
     display:block;
     margin: 0 1rem 0 0;
