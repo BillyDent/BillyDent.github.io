@@ -4,7 +4,8 @@ h1.about-me {
 
 img.about-selfie {
     object-fit: cover;
-    max-width: 40ch;
+    width: 40ch;
+    max-width: 100%;
 }
 
 img.software-icon {

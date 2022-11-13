@@ -72,10 +72,3 @@ div.container-flex-horizontal {
     justify-content:center;
     flex-wrap:wrap;
 }
-
-@media (max-width: 800px) {
-
-    div.center-container-flex-horizontal {
-        flex-direction: column;
-    }
-}
