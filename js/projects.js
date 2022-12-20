@@ -2,8 +2,10 @@ var content;
 var contentContainer;
 var modal = document.getElementById("projectsModal");
 var closeSpans = document.getElementsByClassName("close");
+var body = document.getElementById("body");
 
 function closeModal() {
+  body.style.overflow = "auto";
   modal.style.display = "none";
   
   contentContainer.appendChild(content);
@@ -28,8 +30,13 @@ window.onclick = function(event) {
   }
 } 
 
+
+
 // Move project content to the modal window when clicked
 function onThumbnailClick(target) {
+
+  body.style.overflow = "hidden";
+
   modal.style.display = "block";
   modal.scrollTop = 0;
 
