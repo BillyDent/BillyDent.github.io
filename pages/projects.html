@@ -52,45 +52,54 @@
 
     <!-- Content-->
     <main>  
+        <div id = "projectsModal" class="modal"> </div>
 
         <div class="projects-container">
-          <a class="project-item" href="">
+
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="bells-beach-content">
             <div>
               <img class="project-thumbnail" src="../img/project-thumbnails/bells-beach.webp"/>
               <p class="center-text s4">Bell's Beach</p>
-            </div>
-          </a>
-          <a class="project-item" href="">
+            </div>                                        
+          </button>           
+               
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="go-home-grub-content">
             <div>
-              <img class="project-thumbnail" src="../img/pirate-hat.jpg"/>
-              <p class="center-text s4">Grub, Go Home</p>
-            </div>
-          </a>
-          <a class="project-item" href="">
+              <img class="project-thumbnail" src="../img/project-thumbnails/grub-go-home.webp"/>
+              <p class="center-text s4">Go Home, Grub</p>              
+            </div>      
+          </button>
+
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="cosmic-commute-content">
             <div>
               <img class="project-thumbnail" src="../img/project-thumbnails/cosmic-commute.webp"/>
               <p class="center-text s4">Cosmic Commute</p>
             </div>
-          </a>
-          <a class="project-item" href="">
+          </button>
+          
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="monomyth-content">
             <div>
               <img class="project-thumbnail" src="../img/project-thumbnails/monomyth.png"/>
               <p class="center-text s4">Monomyth</p>
             </div>
-          </a>
-          <a class="project-item" href="">
+          </button>
+
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="speedboat-alchemy-content">
             <div>
-              <img class="project-thumbnail" src="../img/pirate-hat.jpg"/>
+              <img class="project-thumbnail" src="../img/project-thumbnails/speedboat-alchemy.webp"/>
               <p class="center-text s4">Speedboat Alchemy</p>
             </div>
-          </a>
-          <a class="project-item" href="">
+          </button>
+
+          <button class="project-item" type="button" onclick="onThumbnailClick(this)" contentId="ephemeral-content">
             <div>
               <img class="project-thumbnail" src="../img/project-thumbnails/ephemeral.webp"/>
               <p class="center-text s4">Ephemeral</p>
             </div>
-          </a>
+          </button>
         </div>
+
+        
 
     </main>
 
@@ -112,13 +121,404 @@
         <div class="footer-text" style="text-align:center;">©2022 Billy Dent</div>
     </footer>            
 
+    <div style="display: none;">
+      <div id="bells-beach-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+          
+          <h1 class="project-heading">Bell's Beach</h1>             
+          Producer, Programmer, Game Designer, Sound Designer
+
+          <br>
+          
+          <a class="project-store-link" href="https://billy-dent.itch.io/bells-beach">Store Page</a>              
+
+          <br><br>
+          
+          <div class="video-container">
+          <iframe class="responsive-video" src="https://www.youtube.com/embed/Wwu4zmzHHvM" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+          </iframe>
+          </div>
+          
+          <br><br>
+          
+          <div class="modal-text">Bell’s Beach is a silly exploration platformer where fishing is taken to its illogical extreme. 
+            Run and jump around a vibrant coastal town, chatting with eccentric locals, 
+            and search for fishing spots that only a keen eye and a slightly mad mind will be able to discover.
+          </div>        
+
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Designing and implementing a third-person character controller with a unique fishing mechanic</li>
+              <li>Identifying inefficiencies in the team’s workflow and implementing tools/pipeline scripts to improve them, 
+                including custom asset importers, collider visualisation and a narrative scripting engine</li>
+              <li>Planning and managing the work for an agile team of six members, facilitating communication and fostering a positive team environment that avoids crunch</li>
+              <li>Proactively and constantly reassessing scope</li>
+              <li>Maintaining task/issue/risk tracking and project documentation in Notion</li>
+              <li>Presenting and pitching the project to both professional peers and the general public</li>
+            </ul>
+          </div>
+
+          <br><br>
+
+          <img src="../img/project-screenshots/bells-beach/bells-beach-3.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">Bell’s Beach was developed by a team of six members as the final capstone project for RMIT’s Bachelor of Design (Games) course. 
+            We also worked with two external composers to produce the game’s soundtrack. 
+            This game represents the best of what we have learned and developed during our time in the course, 
+            especially in our production methodologies. I'm proud to say that the project is exactly what we set out to create. 
+            My role was primarily that of the producer and lead programmer, but included other responsibilities such as game design, sound design, writing and cinematography.
+          </div>
+          
+          <br>
+          
+          <div class="modal-text">We have showcased this game at ACMI’s RMIT Audience Lab event in December 2022, 
+            and presented a well received informal pitch to a panel of mentors as well as VicScreen’s Paul Callaghan in our final assessment.
+          </div>
+
+          <br><br>
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/bells-beach/bells-beach-1.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/bells-beach/bells-beach-2.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/bells-beach/bells-beach-4.jpg"/>
+          </div>
+
+        </div>
+      </div>
+      <div id="go-home-grub-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+
+          <h1 class="project-heading">Go Home, Grub</h1>
+
+          Producer, Sound Designer
+
+          <br>
+          
+          <a class="project-store-link" href="https://indreams.me/dream/mGPgiyhptcu">Store Page</a>              
+
+          <br><br>
+          
+          <div class="video-container">
+          <iframe class="responsive-video" src="https://www.youtube.com/embed/0f-LjrDrAzQ" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+          </iframe>
+          </div>
+
+          <br><br>
+          
+          <div class="modal-text">Go Home, Grub is a short platformer experience where a cute, 
+            tiny grub climbs over backyard objects on the way back to its home.
+          </div>          
+
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Planning and managing work for an agile team of eight members:  facilitating standups, sprint planning and retrospectives.</li>
+              <li>Identifying and solving conflict and communication gaps between team members</li>
+              <li>Producing and maintaining important project documentation as well as task/issue/risk tracking</li>
+              <li>Delegating production responsibilities to team leads and ensuring the chain of communication functions</li>
+              <li>Helping the team to make hard decisions about the shape and scope of the project, ensuring it ships on time with team members happy</li>
+            </ul>
+          </div>
+
+          <br><br>
+
+          <img src="../img/project-screenshots/go-home-grub/go-home-grub-5.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">Go Home, Grub was developed by a team of eight members in a Work-Integrated-Learning course hosted by RMIT and Media Molecule, 
+            using the game creation tool Dreams. The game’s core goal was creating a sense of smallness, presenting common human-made objects to scale from the viewpoint of an insect, and was a massive success. 
+            With a large team of unfamiliar collaborators, a set of tools we had no previous experience with, and a simulated studio environment, this course served as an incredible exercise in building production skills. 
+            This was my first time working as a dedicated producer, only briefly touching Dreams directly to assist with sound design, and it was a fantastic experience. 
+            This project had many points of friction and difficulty, including a novel mechanic that was ultimately cut, tension between team members, and shifting design pillars, 
+            all of which I worked to mitigate, receiving commendation from my fellow team members as well as my mentors.
+          </div>            
+          
+          <br><br>
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/go-home-grub/go-home-grub-1.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/go-home-grub/go-home-grub-2.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/go-home-grub/go-home-grub-3.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/go-home-grub/go-home-grub-4.jpg"/>
+          </div>
+          
+        </div>
+      </div>
+      <div id="cosmic-commute-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+
+          <h1 class="project-heading">Cosmic Commute</h1>
+
+          Producer, Programmer, Writer, Game Designer
+
+          <br>
+          
+          <a class="project-store-link" href="https://billy-dent.itch.io/space-mykee-officer">Store Page</a>              
+
+          <br><br>
+          
+          <div class="video-container">
+          <iframe class="responsive-video" src="https://www.youtube.com/embed/NRbgv4Vrt54" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+          </iframe>
+          </div>
+
+          <br><br>
+          
+          <div class="modal-text">Cosmic Commute is a surreal space comedy set in a world stranger than fiction: the public transport system. 
+            Playing as everyone's least favourite discount cop - a ticket inspector - discover that even unfathomable creatures have relatable problems.
+          </div>
+          
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Planning and managing the work for an agile team of six members, facilitating communication and fostering a positive team environment that avoids crunch</li>
+              <li>Designing a game to meet the strengths and weaknesses of an inexperienced team and accommodate a flexible scope</li>
+              <li>Designing and implementing a dialogue system that responds to character and player positions while maximising readability/accessibility at all angles</li>
+              <li>Writing a full cast of vibrant, funny characters and working closely with the character artist to marry writing voice and visual design</li>
+            </ul>
+          </div>
+
+          <br><br>
+
+          <img src="../img/project-screenshots/cosmic-commute/cosmic-commute-5.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">Cosmic Commute was developed by a team of four members. 
+            We sought to create a comedic adventure inspired by our shared experiences living in Melbourne, presenting a fantastical version of mundane experiences. 
+            This project was my first time formally occupying the role of producer, where I hosted meetings, produced and maintained documentation, 
+            and put great effort into understanding the workflows of my fellow team members to ensure the production ran smoothly. 
+            The game was designed from conception to have an intensely flexible scope – a method to ensure, despite our relative inexperience working on games in a team, 
+            that we could produce a polished and complete experience. 
+          </div>                
+
+          <br>
+
+          <div class="modal-text">
+            We were approached to include Cosmic Commute in the next issue of a prominent, physically distributed, 
+            curated collection of independent games, the details of which are still private as of December 2022.
+          </div>    
+          
+          <br><br>
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/cosmic-commute/cosmic-commute-1.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/cosmic-commute/cosmic-commute-2.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/cosmic-commute/cosmic-commute-3.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/cosmic-commute/cosmic-commute-4.jpg"/>
+          </div>
+
+        </div>
+      </div>
+      <div id="monomyth-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+
+          <h1 class="project-heading">Monomyth</h1>
+
+          Game Designer, Level Designer, Writer, Programmer, Sound Designer, 3D Art
+
+          <br>
+          
+          <a class="project-store-link" href="https://billy-dent.itch.io/monomyth">Store Page</a>              
+
+          <br><br>
+
+          <img src="../img/project-screenshots/monomyth/monomyth-4.jpg"/>
+
+          <br><br>                                            
+          
+          <div class="modal-text">Experience a tale as old as time: the Hero’s Journey, told as literally as possible! 
+            Monomyth is a relaxed and surreal walker that pokes light fun at Joseph Campbell’s universal story and the grand language used to describe it.
+          </div>                
+
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Created an interesting and thoughtful narrative experience through primarily level design</li>
+              <li>Leveraged shaders and post-processing along with external art assets to create a cohesive art direction with little modelling or texturing work</li>
+              <li>Produced, filmed and edited a well received 10-minute video presentation on the creation of the game and my creative process 
+                for the world’s longest running independent games festival</li>
+            </ul>
+          </div>
+
+          <br><br>
+
+          <img src="../img/project-screenshots/monomyth/monomyth-1.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">Monomyth is a game that I developed on my own, with an external composer who produced the title screen’s music. 
+            I created this game as an exploration of visual and narrative ideas expressed through primarily level design, 
+            which takes centre stage alongside very light gameplay and explicit story. 
+            The idea of interpreting Joseph Campbell’s Monomyth literally was intended to poke fun at the strange and hyper specific language he used to describe it, 
+            but interestingly, it also reinforced and validated the broad structure, pacing and ideas behind the concept. 
+            I relied very heavily on art assets sourced from the Unity asset store among other places, 
+            and used the combination of abstract imagery and shader/post-processing work to unify potentially disparate styles into one cohesive experience. 
+          </div>                
+
+          <br>
+
+          <div class="modal-text">
+            I was invited by Freeplay to talk about this game, my influences, and my process at the 2021 Freeplay Parallels event.
+          </div>
+
+          <br><br>
+
+          <div class="video-container">
+            <iframe class="responsive-video" src="https://www.youtube.com/embed/DEWvQE_cg44" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen>
+            </iframe>
+          </div>
+
+          <br><br>          
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/monomyth/monomyth-2.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/monomyth/monomyth-3.jpg"/>
+          </div>
+
+        </div>
+      </div>
+      <div id="speedboat-alchemy-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+
+          <h1 class="project-heading">Speedboat Alchemy</h1>
+
+          Programmer, Game Designer, 3D Art
+
+          <br>
+          
+          <a class="project-store-link" href="https://krystalcoconut.itch.io/speedboat-alchemy">Store Page</a>              
         
+          <br><br>
+
+          <img src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-4.jpg"/>
+
+          <br><br>
+          
+          <div class="modal-text">
+            Use your alchemy-boat to blast your way through frog town and win the potion prize!
+          </div>        
+      
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Designed and implemented a modular weapon system that could produce a variety of different effects with no additional programming, and was usable by both the player and enemies</li>
+              <li>Designed and implemented the alchemy menu, where players frantically reload their weapon with a physics based minigame</li>
+              <li>Implemented artificial intelligence for the game’s different enemies</li>
+              <li>Iterated on the character controller to find a satisfying balance between the sensation of speed and the precision required for combat</li>
+            </ul>
+          </div>
+
+          <br><br>
+
+          <img src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-1.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">
+            Speedboat Alchemy was created by a rotating team of five members for the Ludum Dare 49 game jam. 
+            With the theme “unstable”, we drafted the concept for the game as one that deliberately evoked a lot of stress and friction in its gameplay. 
+            The player’s weapon has completely randomized properties that change every time they reload, 
+            and reloading requires opening an entire menu on top of the action, manually and slowly dragging the “ingredients” into a cauldron. 
+            By making these systems both heavy and unpredictable, we aimed to create an experience where the players threw their hands up and gave into the chaos, 
+            frantically throwing whatever they could together.
+          </div>                
+
+          <br><br>          
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-3.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-2.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-5.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/speedboat-alchemy/speedboat-alchemy-6.jpg"/>
+          </div>
+
+        </div>
+      </div>
+      <div id="ephemeral-content" class="modal-content"> 
+        <div class="modal-content-padding">
+          <span class="close">&times;</span>
+
+          <h1 class="project-heading">Ephemeral</h1>
+
+          Game Designer, Programmer, Level Designer, Writer, Sound Designer, 2D Art
+
+          <br>
+          
+          <a class="project-store-link" href="https://billy-dent.itch.io/ephemeral">Store Page</a>              
+          
+          <br><br>
+
+          <img src="../img/project-screenshots/ephemeral/ephemeral-3.jpg"/>
+
+          <br><br>
+          
+          <div class="modal-text">
+            A meditative platformer about catching bugs and picking flowers while a gentle voice ushers you to the afterlife.
+          </div>          
+
+          <div class="modal-text">                
+            <h3>Key Responsibilities and Accomplishments:</h3>
+            <ul>
+              <li>Designed and implemented a novel “bug net” mechanic which evokes the feeling of acrobatic, 
+                position-sensitive action platformer combat (e.g. Hollow Knight) while maintaining cohesion with the narrative
+              </li>
+              <li>Brought a complete and polished game experience from concept to completion in 48 hours, including time for playtesting</li>
+            </ul>
+          </div>
+          
+          <br><br>
+
+          <img src="../img/project-screenshots/ephemeral/ephemeral-1.jpg"/>
+
+          <br><br>
+
+          <div class="modal-text">
+            I created Ephemeral entirely on my own for the 1bit Jam, which had the theme of “death”. 
+            I designed Ephemeral as a non-violent game that still evokes the acrobatic feeling of Hollow Knight’s combat, 
+            which became the game’s central mechanic, the net, which allows you to jump additional times in the air by catching butterflies or acorns. 
+            I think this was an incredible success, creating a platformer with momentary gameplay that almost feels like positioning for an attack, 
+            but maintains the cute, quiet and peaceful tone. Narratively, this game was an exploration of my relationship with the idea of god. 
+            What would it be like, speaking to a higher power? With this in mind, I wrote a character who truly felt benevolent, and intimate, 
+            yet beyond life and understanding, and their gentle words follow you from level to level.
+          </div>                
+
+          <br><br>      
+
+          <div class="screenshot-gallery">
+            <img class="gallery-screenshot" src="../img/project-screenshots/ephemeral/ephemeral-4.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/ephemeral/ephemeral-5.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/ephemeral/ephemeral-6.jpg"/>
+            <img class="gallery-screenshot" src="../img/project-screenshots/ephemeral/ephemeral-2.jpg"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     
 
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/projects.js"></script>
   
 </body>
 
