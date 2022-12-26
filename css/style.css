@@ -4,6 +4,35 @@
 
 :root {
     font-family: Apfel Grotezk;
+    --page-background-colour: #e2c3ea;
+}
+
+body {
+    background-color: var(--page-background-colour);    
+    color: #212121;
+}
+
+a {
+    color: #667e55;
+    --transition-duration: 0.25s;    
+    transition: color var(--transition-duration);
+    
+}
+
+a:hover {
+    color: #57a51c;    
+    transition: color var(--transition-duration);
+}
+
+a img.platform-icon {
+    --transition-duration: 0.25s;
+    transform: scale(1.0);
+    transition: transform var(--transition-duration);
+}
+
+a img.platform-icon:hover {
+    transition: transform var(--transition-duration);
+    transform: scale(1.2);
 }
 
 p {
@@ -34,7 +63,7 @@ a.landing-hyperlink {
 }
 
 a.active-link {
-    color:gray;
+    color: #a2b494;
 }
 
 img.platform-icon {

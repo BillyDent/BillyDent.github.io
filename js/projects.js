@@ -7,6 +7,7 @@ var body = document.getElementById("body");
 function closeModal() {
   body.style.overflow = "auto";
   modal.style.display = "none";
+  modal.setAttribute("active", "false");
   
   contentContainer.appendChild(content);
   contentContainer = null;
@@ -45,4 +46,6 @@ function onThumbnailClick(target) {
   contentContainer = content.parentElement;
 
   modal.appendChild(content);
+
+  modal.setAttribute("active", "true");
 }
