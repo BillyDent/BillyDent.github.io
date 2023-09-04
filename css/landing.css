@@ -1,3 +1,7 @@
+@import "normalize.css";
+@import "main.css";
+@import "style.css";
+
 :root {
     font-family: ADLaM;
     --page-background-colour: #A69ACA;
