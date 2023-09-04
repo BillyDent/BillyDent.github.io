@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: ADLaM;
-    src: url("../fonts/ADLaMDisplay-Regular.ttf") format("truetype");
+    src: url("../fonts/ADLaMDisplay-Regular.woff") format("woff");
     font-style:normal;
 }
 
