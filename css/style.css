@@ -4,16 +4,18 @@
 
 :root {
     font-family: Apfel Grotezk;
-    --page-background-colour: #f0d9f5;
+    --page-background-colour: white;
+    --text-colour: #212121;
+    --hyperlink-colour: #667e55;
 }
 
 body {
     background-color: var(--page-background-colour);    
-    color: #212121;
+    color: var(--text-colour);
 }
 
 a {
-    color: #667e55;
+    color: var(--hyperlink-colour);
     --transition-duration: 0.25s;    
     transition: color var(--transition-duration);
     
