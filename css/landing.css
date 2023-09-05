@@ -37,6 +37,14 @@
 
 a {
     text-decoration: none !important;
+    --transition-duration: 0.25s;
+    transform: scale(1.0);
+    transition: transform var(--transition-duration);
+}
+
+a:hover {
+    transition: transform var(--transition-duration);
+    transform: scale(1.2);
 }
 
 .point-selfie {
@@ -47,3 +55,5 @@ a {
     max-width: 33%;
     width: 16rem;
 }
+
+a:
